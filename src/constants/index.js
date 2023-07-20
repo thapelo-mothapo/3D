@@ -8,21 +8,12 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -81,24 +72,21 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Github",
+    icon: "https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-1024.png",
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
+
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Bitbucket",
+    icon: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/44_Bitbucket_logo_logos-1024.png",
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
+    name: "ESLINT",
+    icon: "https://www.vectorlogo.zone/logos/eslint/eslint-icon.svg",
   },
   {
     name: "git",
@@ -108,32 +96,16 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Software Engineer",
+    url: "https://intasect.co.za/",
+    company_name: "Intasect",
+    icon: "https://intasect.co.za/images/intasect-logo.png",
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "April 2021 - Jan 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -142,11 +114,12 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Software Engineer",
+    url: "https://www.sovtech.co.za/",
+    company_name: "SovTech",
+    icon: "https://global-uploads.webflow.com/634e4fc81c2f186c7ec880a7/634e4fc81c2f188fd8c88316_SovTech-Logo-White-01.svg",
+    iconBg: "#40454f",
+    date: "Feb 2022 - Nov 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -155,11 +128,12 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Front-End Engineer",
+    url: "https://www.jemhr.com/",
+    company_name: "Jem",
+    icon: "https://www.jemhr.com/hs-fs/hubfs/Jemlogo.png?width=190&name=Jemlogo.png",
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Dec 2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
