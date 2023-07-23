@@ -18,8 +18,41 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const formRef = useRef();
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Thapelo",
+          from_email: form.email,
+          to_email: import.meta.env.VITE_EMAILJS_EMAIL,
+          message: form.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      )
+      .then(() => {
+        setLoading(false);
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+
+        alert("Thank you, your message wen't through... :)");
+      })
+      .catch(() => {
+        alert("Sorry, something went wrong :(");
+      });
+  };
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex  gap-10  overflow-hidden">
       <motion.div
